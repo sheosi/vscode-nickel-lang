@@ -1,0 +1,25 @@
+{
+  "name": "nickel-lang",
+  "displayName": "Nickel lang",
+  "description": "Language support for the nickel lang language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "nickel",
+      "aliases": ["Nickel", "nickel"],
+      "extensions": [".ncl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "nickel",
+      "scopeName": "source.nickel",
+      "path": "./syntaxes/nickel.tmLanguage.json"
+    }]
+  }
+}
